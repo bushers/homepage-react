@@ -28,13 +28,13 @@ const styles = StyleSheet.create({
     position: 'relative',
     display: 'flex',
     flexFlow: 'row nowrap',
-    alignItems: 'center'
+    alignItems: 'center',
+    fontWeight: '300',
+    fontFamily: '"Patua One", cursive'
   },
 
   brand: {
-    fontSize: '0.9em',
-    fontWeight: '300',
-    fontFamily: '"Patua One", cursive'
+    fontSize: '0.9em'
   },
 
   nav: {
