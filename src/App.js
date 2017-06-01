@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom'
 import Header from './components/Header'
 import Home from './components/Home'
+import Intro from './components/Intro'
 import About from './components/About'
 import Work from './components/Work'
 import Contact from './components/Contact'
@@ -19,6 +20,7 @@ class App extends Component {
       <BrowserRouter>
         <div className={css(styles.wrapper)}>
           <Header />
+          <Intro />
           <div className={css(styles.mainContentContainer)}>
             <Switch>
               <Route exact path="/" component={Home} />

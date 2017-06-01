@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     flexFlow: 'row nowrap',
     alignItems: 'center',
     fontWeight: '300',
-    fontFamily: '"Patua One", cursive'
+    fontFamily: '"Patua One", sans-serif'
   },
 
   brand: {
