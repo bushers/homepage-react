@@ -12,24 +12,23 @@ import Work from './components/Work'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import NotFound from './components/NotFound'
-import { StyleSheet, css } from 'aphrodite'
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className={css(styles.wrapper)}>
+        <div>
           <Header />
           <Intro />
-          <div className={css(styles.mainContentContainer)}>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/work" component={Work} />
-              <Route path="/contact" component={Contact} />
-              <Route component={NotFound} />
-            </Switch>
-          </div>
+            <div>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/work" component={Work} />
+                <Route path="/contact" component={Contact} />
+                <Route component={NotFound} />
+              </Switch>
+            </div>
           <Footer />
         </div>
       </BrowserRouter>
@@ -38,12 +37,3 @@ class App extends Component {
 }
 
 export default App
-
-const styles = StyleSheet.create({
-  wrapper: {
-  },
-
-  mainContentContainer: {
-
-  }
-})

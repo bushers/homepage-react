@@ -5,7 +5,7 @@ import Social from './Social'
 const Footer = props => (
   <div className={css(styles.wrapper)}>
     <Social />
-    <p className={css(styles.copyright)}>Copyright {year}</p>
+    <p className={css(styles.copyright)}>Copyright &copy; {year}</p>
   </div>
 )
 

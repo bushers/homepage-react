@@ -3,7 +3,8 @@ import { StyleSheet, css } from 'aphrodite'
 
 const Contact = props => (
   <div className={css(styles.wrapper)}>
-    <p>Contact</p>
+    <h3>Find me at these places</h3>
+    <ul></ul>
   </div>
 )
 
@@ -11,6 +12,7 @@ export default Contact
 
 const styles = StyleSheet.create({
   wrapper: {
-
+    padding: '3em 1em',
+    textAlign: 'center'
   }
 })

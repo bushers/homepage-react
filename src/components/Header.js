@@ -7,7 +7,7 @@ const Header = props => (
     <div className={css(styles.brand)}>
       <NavLink exact to ='/'>
         <h3>Nick Bushby</h3>
-        <p>Front-end Developer</p>
+        <p className={css(styles.brandTitle)}>Front-end Developer</p>
       </NavLink>
     </div>
     <ul className={css(styles.nav)}>
@@ -35,6 +35,10 @@ const styles = StyleSheet.create({
 
   brand: {
     fontSize: '0.9em'
+  },
+
+  brandTitle: {
+    margin: 0
   },
 
   nav: {
