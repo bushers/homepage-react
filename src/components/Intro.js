@@ -1,11 +1,21 @@
 import React from 'react'
+import { CSSTransitionGroup } from 'react-transition-group'
 import { StyleSheet, css } from 'aphrodite'
 
 const Intro = props => (
   <div className={css(styles.intro)}>
-    <p>Hi there, Im</p>
-    <h1>Nick Bushby</h1>
-    <p>Front-end Developer</p>
+    <CSSTransitionGroup
+      transitionName='title'
+      transitionAppear={true}
+      transitionAppearTimeout={800}
+      transitionEnterTimeout={600}
+      transitionLeaveTimeout={200}>
+      <div>
+        <p>Hi there, Im</p>
+        <h1>Nick Bushby</h1>
+        <p>Front-end Developer</p>
+      </div>
+    </CSSTransitionGroup>
   </div>
 )
 

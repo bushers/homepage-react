@@ -49,29 +49,24 @@ ul {
   Styles for ReactCSSTransitionGroup
 ****************************************/
 
-.page-enter {
+.title-appear {
   opacity: 0.01;
+  transform: translateX(-100%);
 }
 
-.page-enter.page-enter-active {
+.title-appear.title-appear-active {
   opacity: 1;
-  transition: opacity 600ms ease-in;
+  transform: translateX(0%);
+  transition: all 0.8s ease-out;
 }
 
-.page-leave {
-  opacity: 1;
-}
-
-.page-leave.page-leave-active {
+.intro-appear {
   opacity: 0.01;
-  transition: opacity 200ms ease-in;
+  transform: translateX(100%);
 }
 
-.page-appear {
-  opacity: 0.01;
-}
-
-.page-appear.example-appear-active {
+.intro-appear.intro-appear-active {
   opacity: 1;
-  transition: opacity .6s ease-in;
+  transform: translateX(0%);
+  transition: all 0.8s ease-out;
 }

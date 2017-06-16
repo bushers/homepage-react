@@ -8,9 +8,9 @@ const Home = props => (
     <div className={css(styles.jumbo)}>
       <div className={css(styles.overlay)}>
         <CSSTransitionGroup
-          transitionName="page"
+          transitionName='intro'
           transitionAppear={true}
-          transitionAppearTimeout={600}
+          transitionAppearTimeout={800}
           transitionEnterTimeout={600}
           transitionLeaveTimeout={200}>
           <div>
