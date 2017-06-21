@@ -7,11 +7,11 @@ const Intro = props => (
     <CSSTransitionGroup
       transitionName='title'
       transitionAppear={true}
-      transitionAppearTimeout={800}
+      transitionAppearTimeout={1000}
       transitionEnterTimeout={600}
       transitionLeaveTimeout={200}>
       <div>
-        <p>Hi there, Im</p>
+        <p>Hi there, I'm</p>
         <h1>Nick Bushby</h1>
         <p>Front-end Developer</p>
       </div>

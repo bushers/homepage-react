@@ -10,7 +10,7 @@ const Home = props => (
         <CSSTransitionGroup
           transitionName='intro'
           transitionAppear={true}
-          transitionAppearTimeout={800}
+          transitionAppearTimeout={1000}
           transitionEnterTimeout={600}
           transitionLeaveTimeout={200}>
           <div>

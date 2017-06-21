@@ -24,8 +24,8 @@ const styles = StyleSheet.create({
   },
 
   item: {
-    width: 38,
-    height: 38,
+    width: 32,
+    height: 32,
     margin: '0.5em 0.25em'
   }
 })
