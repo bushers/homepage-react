@@ -3,16 +3,14 @@ import { StyleSheet, css } from 'aphrodite'
 
 const styles = StyleSheet.create({
   wrapper: {
-    padding: '3em 1em',
-    textAlign: 'center'
+    'padding': '2em 1em'
   }
 })
 
-const Contact = props => (
+const WorkItemPage = props => (
   <div className={css(styles.wrapper)}>
-    <h3>Find me at these places</h3>
-    <ul></ul>
+    <h3>{props.data.title}</h3>
   </div>
 )
 
-export default Contact
+export default WorkItemPage

@@ -2,25 +2,6 @@ import React from 'react'
 import { CSSTransitionGroup } from 'react-transition-group'
 import { StyleSheet, css } from 'aphrodite'
 
-const Intro = props => (
-  <div className={css(styles.intro)}>
-    <CSSTransitionGroup
-      transitionName='title'
-      transitionAppear={true}
-      transitionAppearTimeout={1000}
-      transitionEnterTimeout={600}
-      transitionLeaveTimeout={200}>
-      <div>
-        <p>Hi there, I'm</p>
-        <h1>Nick Bushby</h1>
-        <p>Front-end Developer</p>
-      </div>
-    </CSSTransitionGroup>
-  </div>
-)
-
-export default Intro
-
 const styles = StyleSheet.create({
   intro: {
     backgroundColor: '#e1e8f0',
@@ -44,3 +25,22 @@ const styles = StyleSheet.create({
     }
   },
 })
+
+const Intro = props => (
+  <div className={css(styles.intro)}>
+    <CSSTransitionGroup
+      transitionName='title'
+      transitionAppear={true}
+      transitionAppearTimeout={1000}
+      transitionEnterTimeout={600}
+      transitionLeaveTimeout={200}>
+      <div>
+        <p>Hi there, I'm</p>
+        <h1>Nick Bushby</h1>
+        <p>Front-end Developer</p>
+      </div>
+    </CSSTransitionGroup>
+  </div>
+)
+
+export default Intro

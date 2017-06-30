@@ -3,6 +3,23 @@ import { StyleSheet, css } from 'aphrodite'
 import profilePic from '../img/profile-sm.jpg'
 import { CSSTransitionGroup } from 'react-transition-group'
 
+const styles = StyleSheet.create({
+  wrapper: {
+    padding: '2em 1em'
+  },
+
+  pic: {
+    borderRadius: '50%',
+    width: '140px',
+    margin: '2em auto'
+  },
+
+  blurb: {
+    maxWidth: 500,
+    margin: '1em auto'
+  }
+})
+
 const About = props => (
   <div className={css(styles.wrapper)}>
     <CSSTransitionGroup
@@ -22,20 +39,3 @@ const About = props => (
 )
 
 export default About
-
-const styles = StyleSheet.create({
-  wrapper: {
-    padding: '2em 1em'
-  },
-
-  pic: {
-    borderRadius: '50%',
-    width: '140px',
-    margin: '2em auto'
-  },
-
-  blurb: {
-    maxWidth: 500,
-    margin: '1em auto'
-  }
-})

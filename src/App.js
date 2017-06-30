@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
   BrowserRouter,
   Route,
@@ -9,31 +9,35 @@ import Home from './components/Home'
 import Intro from './components/Intro'
 import About from './components/About'
 import Work from './components/Work'
+import WorkItemPage from './components/WorkItemPage'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import NotFound from './components/NotFound'
+import data from './data/workItems'
 
-class App extends Component {
-  render() {
-    return (
-      <BrowserRouter>
+const App = props => (
+  <BrowserRouter>
+    <div>
+      <Header />
+      <Intro />
         <div>
-          <Header />
-          <Intro />
-            <div>
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/about" component={About} />
-                <Route path="/work" component={Work} />
-                <Route path="/contact" component={Contact} />
-                <Route component={NotFound} />
-              </Switch>
-            </div>
-          <Footer />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route exact path="/work" component={Work} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/work/jcm-portfolio"
+                   render={ () => <WorkItemPage data={data[0]} /> } />
+            <Route path="/work/shade-luma"
+                   render={ () => <WorkItemPage data={data[1]} /> } />
+            <Route path="/work/kt-dance"
+                   render={ () => <WorkItemPage data={data[2]} /> } />
+            <Route component={NotFound} />
+          </Switch>
         </div>
-      </BrowserRouter>
-    )
-  }
-}
+      <Footer />
+    </div>
+  </BrowserRouter>
+)
 
 export default App

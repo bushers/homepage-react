@@ -2,15 +2,6 @@ import React from 'react'
 import { StyleSheet, css } from 'aphrodite'
 import Social from './Social'
 
-const Footer = props => (
-  <div className={css(styles.wrapper)}>
-    <Social />
-    <p className={css(styles.copyright)}>Copyright &copy; {year}</p>
-  </div>
-)
-
-export default Footer
-
 const date = new Date()
 const year = date.getFullYear()
 const styles = StyleSheet.create({
@@ -30,3 +21,12 @@ const styles = StyleSheet.create({
     fontSize: '0.8em'
   }
 })
+
+const Footer = props => (
+  <div className={css(styles.wrapper)}>
+    <Social />
+    <p className={css(styles.copyright)}>Copyright &copy; {year}</p>
+  </div>
+)
+
+export default Footer

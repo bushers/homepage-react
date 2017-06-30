@@ -2,24 +2,6 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { StyleSheet, css } from 'aphrodite'
 
-const Header = props => (
-  <div className={css(styles.wrapper)}>
-    <div className={css(styles.brand)}>
-      <NavLink exact to ='/'>
-        <h3>Nick Bushby</h3>
-        <p className={css(styles.brandTitle)}>Front-end Developer</p>
-      </NavLink>
-    </div>
-    <ul className={css(styles.nav)}>
-      <li className={css(styles.navItem)}><NavLink to="/about">About</NavLink></li>
-      <li className={css(styles.navItem)}><NavLink to="/work">Work</NavLink></li>
-      <li className={css(styles.navItem)}><NavLink to="/contact">Contact</NavLink></li>
-    </ul>
-  </div>
-)
-
-export default Header
-
 const styles = StyleSheet.create({
   wrapper: {
     backgroundColor: '#2c3f52',
@@ -51,3 +33,21 @@ const styles = StyleSheet.create({
     margin: '0 0 0 1em'
   }
 })
+
+const Header = props => (
+  <div className={css(styles.wrapper)}>
+    <div className={css(styles.brand)}>
+      <NavLink exact to ='/'>
+        <h3>Nick Bushby</h3>
+        <p className={css(styles.brandTitle)}>Front-end Developer</p>
+      </NavLink>
+    </div>
+    <ul className={css(styles.nav)}>
+      <li className={css(styles.navItem)}><NavLink to="/about">About</NavLink></li>
+      <li className={css(styles.navItem)}><NavLink to="/work">Work</NavLink></li>
+      <li className={css(styles.navItem)}><NavLink to="/contact">Contact</NavLink></li>
+    </ul>
+  </div>
+)
+
+export default Header
