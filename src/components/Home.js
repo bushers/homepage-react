@@ -8,7 +8,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'grey',
     minHeight: '5em'
   },
-
   jumbo: {
     backgroundImage: `url(${jumboImg})`,
     backgroundPosition: '50% 50%',
@@ -18,14 +17,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#fffbfe'
   },
-
   overlay: {
     width: '100%',
     padding: '5em 1em',
     fontSize: '1.15em',
     backgroundColor: 'rgba(0, 0, 0, 0.6)'
   },
-
   listItem: {
     margin: '0.25em 0'
   }

@@ -11,17 +11,19 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #fffbfe;
+  background-color: #f5f5f5;
   font-family: Roboto, sans-serif;
+  line-height: 1.4;
 }
 
 img {
   max-width: 100%;
   display: block;
+  margin: auto;
 }
 
 p {
-  margin: 0.5em
+  margin: 0.5em;
 }
 
 a {

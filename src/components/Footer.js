@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
     fontWeight: '300',
     fontFamily: '"Patua One", sans-serif'
   },
-
   copyright: {
     fontSize: '0.8em'
   }

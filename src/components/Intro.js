@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
       borderRight: '1.25em solid transparent',
       zIndex: '2'
     }
-  },
+  }
 })
 
 const Intro = props => (

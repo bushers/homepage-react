@@ -14,21 +14,17 @@ const styles = StyleSheet.create({
     fontWeight: '300',
     fontFamily: '"Patua One", sans-serif'
   },
-
   brand: {
     fontSize: '0.9em'
   },
-
   brandTitle: {
     margin: 0
   },
-
   nav: {
     display: 'flex',
     flexFlow: 'row nowrap',
     marginLeft: 'auto'
   },
-
   navItem: {
     margin: '0 0 0 1em'
   }

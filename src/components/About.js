@@ -7,13 +7,11 @@ const styles = StyleSheet.create({
   wrapper: {
     padding: '2em 1em'
   },
-
   pic: {
     borderRadius: '50%',
     width: '140px',
     margin: '2em auto'
   },
-
   blurb: {
     maxWidth: 500,
     margin: '1em auto'

@@ -11,7 +11,6 @@ const styles = StyleSheet.create({
     flexFlow: 'row nowrap',
     alignItems: 'center'
   },
-
   item: {
     width: 32,
     height: 32,
