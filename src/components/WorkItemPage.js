@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { StyleSheet, css } from 'aphrodite'
 
 const styles = StyleSheet.create({
@@ -43,3 +44,12 @@ const WorkItemPage = props => (
 )
 
 export default WorkItemPage
+
+WorkItemPage.propTypes = {
+  data: PropTypes.shape({
+    title: PropTypes.string,
+    imgSrc: PropTypes.string,
+    siteUrl: PropTypes.string,
+    blurb: PropTypes.string
+  })
+}

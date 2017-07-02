@@ -14,6 +14,7 @@ const Work = ({match}) => (
       <NavLink key={item.title} to={`${match.url}/${item.path}`}>
         <WorkItem
           imgSrc={item.imgSrc}
+          imgAlt={item.title}
           desc={item.description}
           bg={item.bgColor}
         />
