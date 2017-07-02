@@ -2,12 +2,40 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { StyleSheet, css } from 'aphrodite'
 
+const styles = StyleSheet.create({
+  wrapper: {
+    backgroundColor: '#2c3f52',
+    color: '#fffbfe',
+    padding: '1em',
+    position: 'relative',
+    display: 'flex',
+    flexFlow: 'row nowrap',
+    alignItems: 'center',
+    fontWeight: '300',
+    fontFamily: '"Patua One", sans-serif'
+  },
+  brand: {
+    fontSize: '0.9em'
+  },
+  brandTitle: {
+    margin: 0
+  },
+  nav: {
+    display: 'flex',
+    flexFlow: 'row nowrap',
+    marginLeft: 'auto'
+  },
+  navItem: {
+    margin: '0 0 0 1em'
+  }
+})
+
 const Header = props => (
   <div className={css(styles.wrapper)}>
     <div className={css(styles.brand)}>
       <NavLink exact to ='/'>
         <h3>Nick Bushby</h3>
-        <p>Front-end Developer</p>
+        <p className={css(styles.brandTitle)}>Front-end Developer</p>
       </NavLink>
     </div>
     <ul className={css(styles.nav)}>
@@ -19,31 +47,3 @@ const Header = props => (
 )
 
 export default Header
-
-const styles = StyleSheet.create({
-  wrapper: {
-    backgroundColor: '#2c3f52',
-    color: '#fffbfe',
-    padding: '1em',
-    position: 'relative',
-    display: 'flex',
-    flexFlow: 'row nowrap',
-    alignItems: 'center'
-  },
-
-  brand: {
-    fontSize: '0.9em',
-    fontWeight: '300',
-    fontFamily: '"Patua One", cursive'
-  },
-
-  nav: {
-    display: 'flex',
-    flexFlow: 'row nowrap',
-    marginLeft: 'auto'
-  },
-
-  navItem: {
-    margin: '0 0 0 1em'
-  }
-})
