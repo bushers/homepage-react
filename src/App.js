@@ -28,10 +28,12 @@ const App = props => (
             <Route path="/contact" component={Contact} />
             <Route path="/work/jcm-portfolio"
                    render={ () => <WorkItemPage data={data[0]} /> } />
+           <Route path="/work/weather-app"
+                  render={ () => <WorkItemPage data={data[1]} /> } />
             <Route path="/work/shade-luma"
-                   render={ () => <WorkItemPage data={data[1]} /> } />
-            <Route path="/work/kt-dance"
                    render={ () => <WorkItemPage data={data[2]} /> } />
+            <Route path="/work/kt-dance"
+                   render={ () => <WorkItemPage data={data[3]} /> } />
             <Route component={NotFound} />
           </Switch>
         </div>

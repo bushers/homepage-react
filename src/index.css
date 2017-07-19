@@ -128,7 +128,7 @@ ul {
 }
 
 .work-item-img {
-  max-width: 140px;
+  max-width: 170px;
   transition: transform 0.4s;
 }
 
@@ -149,6 +149,7 @@ ul {
   position: absolute;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100px;
   width: 100%;
   top: auto;

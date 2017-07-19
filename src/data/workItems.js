@@ -10,6 +10,16 @@ export default [
     bgColor: '#efefef'
   },
   {
+    title: 'React Weather App',
+    path: 'weather-app',
+    siteUrl: 'bush-weather-app.surge.sh',
+    imgSrc: require('../img/react-logo.png'),
+    siteScreen: require('../img/weather-app-screen.png'),
+    description: 'Simple weather app made using React and the OpenWeatherMap API',
+    blurb: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.',
+    bgColor: '#ff665e'
+  },
+  {
     title: 'Shade Luma Video Production',
     path: 'shade-luma',
     siteUrl: 'shade-luma.com',
