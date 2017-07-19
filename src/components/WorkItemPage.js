@@ -17,14 +17,15 @@ const styles = StyleSheet.create({
   },
   title: {
     'margin': '0.5em auto 0 auto',
-    'fontSize': '1.4em'
+    'fontSize': '1.6em'
   },
   link: {
     'color': '#2c3f52',
-    'fontWeight': 'bold'
+    'fontWeight': 'bold',
+    fontSize: '1.2em'
   },
   screen: {
-    margin: '3em auto',
+    margin: '4em auto',
     borderTop: '3px solid #2c3f52',
    'borderRadius': '3px',
     boxShadow: '0 2px 2px rgba(0,0,0,0.1)'
@@ -53,7 +54,7 @@ const WorkItemPage = props => (
     <a className={css(styles.link)}
        href={`http://${props.data.siteUrl}`}>Visit site</a>
     <CSSTransitionGroup
-     transitionName='screen-blurb'
+     transitionName='fade-in'
      transitionAppear={true}
      transitionAppearTimeout={500}
      transitionEnterTimeout={600}
@@ -61,17 +62,10 @@ const WorkItemPage = props => (
       <img className={css(styles.screen)}
          src={props.data.siteScreen}
          alt='site screen shot' />
-     </CSSTransitionGroup>
-     <CSSTransitionGroup
-       transitionName='work-blurb'
-       transitionAppear={true}
-       transitionAppearTimeout={500}
-       transitionEnterTimeout={600}
-       transitionLeaveTimeout={200}>
-        <div className={css(styles.blurb)}>
-          <p>{props.data.blurb}</p>
-        </div>
-      </CSSTransitionGroup>
+      <div className={css(styles.blurb)}>
+        <p>{props.data.blurb}</p>
+      </div>
+    </CSSTransitionGroup>
     <NavLink className={css(styles.backLink)} to='/work'>
       <img className={css(styles.arrow)}
            src={arrow}

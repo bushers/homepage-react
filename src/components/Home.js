@@ -23,8 +23,11 @@ const styles = StyleSheet.create({
     fontSize: '1.15em',
     backgroundColor: 'rgba(0, 0, 0, 0.6)'
   },
+  list: {
+    fontSize: '1.2em'
+  },
   listItem: {
-    margin: '0.25em 0'
+    margin: '0.1em 0'
   }
 })
 
@@ -35,15 +38,16 @@ const Home = props => (
         <CSSTransitionGroup
           transitionName='intro'
           transitionAppear={true}
-          transitionAppearTimeout={1000}
+          transitionAppearTimeout={800}
           transitionEnterTimeout={600}
           transitionLeaveTimeout={200}>
-          <div>
+          <div className={css(styles.list)}>
             <h3>I make websites using...</h3>
             <ul>
               <li className={css(styles.listItem)}>HTML</li>
               <li className={css(styles.listItem)}>CSS</li>
               <li className={css(styles.listItem)}>JavaScript</li>
+              <li className={css(styles.listItem)}>React</li>
               <li className={css(styles.listItem)}>WordPress</li>
               <li className={css(styles.listItem)}>Responsive Design</li>
             </ul>

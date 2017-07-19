@@ -21,9 +21,9 @@ const styles = StyleSheet.create({
 const About = props => (
   <div className={css(styles.wrapper)}>
     <CSSTransitionGroup
-      transitionName='profile-pic'
+      transitionName='fade-in'
       transitionAppear={true}
-      transitionAppearTimeout={800}
+      transitionAppearTimeout={500}
       transitionEnterTimeout={600}
       transitionLeaveTimeout={200}>
       <img className={css(styles.pic)} src={profilePic} alt='Nick Bushby profile pic' />

@@ -31,7 +31,7 @@ const Intro = props => (
     <CSSTransitionGroup
       transitionName='title'
       transitionAppear={true}
-      transitionAppearTimeout={1000}
+      transitionAppearTimeout={800}
       transitionEnterTimeout={600}
       transitionLeaveTimeout={200}>
       <div>
