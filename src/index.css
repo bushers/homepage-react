@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Patua+One|Lato:400');
+@import url('https://fonts.googleapis.com/css?family=Patua+One|Lato:300');
 
 html {
  box-sizing: border-box;
@@ -13,7 +13,7 @@ body {
   font-family: 'Lato', sans-serif;
   padding: 0;
   background-color: #f1f2f3;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 img {
