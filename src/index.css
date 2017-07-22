@@ -107,11 +107,15 @@ ul {
   transition: transform 0.4s;
 }
 
-.work-item-tile:hover .work-item-img {
+.work-item-tile:hover .work-item-img,
+.work-item-tile:focus .work-item-img,
+.work-item-tile:active .work-item-img {
   transform: translateY(-50px);
 }
 
-.work-item-tile:hover .work-item-overlay {
+.work-item-tile:hover .work-item-overlay,
+.work-item-tile:focus .work-item-overlay,
+.work-item-tile:active .work-item-overlay {
   opacity: 1;
   transform: translateY(0px);
   transition: transform 0.4s, opacity 0.1s;
