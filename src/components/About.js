@@ -5,7 +5,7 @@ import { CSSTransitionGroup } from 'react-transition-group'
 
 const styles = StyleSheet.create({
   wrapper: {
-    padding: '2em 1em'
+    padding: '3em 1em'
   },
   pic: {
     borderRadius: '50%',

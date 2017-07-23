@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
   intro: {
     backgroundColor: '#e1e8f0',
     position: 'relative',
-    padding: '2em 1em',
+    padding: '1em',
     textAlign: 'center',
     fontFamily: '"Patua One", sans-serif',
     fontSize: '1.2em',
@@ -22,7 +22,13 @@ const styles = StyleSheet.create({
       borderLeft: '1.25em solid transparent',
       borderRight: '1.25em solid transparent',
       zIndex: '2'
+    },
+    '@media (min-width: 992px)': {
+      padding: '2em'
     }
+  },
+  text: {
+    margin: 0
   }
 })
 
@@ -35,9 +41,9 @@ const Intro = props => (
       transitionEnterTimeout={600}
       transitionLeaveTimeout={200}>
       <div>
-        <p>Hi there, I'm</p>
+        <p className={css(styles.text)}>Hi there, I'm</p>
         <h1>Nick Bushby</h1>
-        <p>Front-end Developer</p>
+        <p className={css(styles.text)}>Front-end Developer</p>
       </div>
     </CSSTransitionGroup>
   </div>

@@ -19,15 +19,12 @@ const styles = StyleSheet.create({
   },
   overlay: {
     width: '100%',
-    padding: '5em 1em',
+    padding: '4em 1em',
     fontSize: '1.15em',
     backgroundColor: 'rgba(0, 0, 0, 0.6)'
   },
   list: {
     fontSize: '1.2em'
-  },
-  listItem: {
-    margin: '0.1em 0'
   }
 })
 
