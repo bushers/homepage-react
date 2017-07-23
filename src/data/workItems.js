@@ -36,7 +36,7 @@ export default [
     imgSrc: require('../img/kt-dance-logo.png'),
     siteScreen: require('../img/kt-dance-screen.png'),
     description: 'Bespoke website design and development for Bexley based dance school',
-    blurb: 'This project was a complete site redesign of the client\'s existing site. The site needed an updated look and to be made responsive. I used the Gulp task runner to automate parts of the development process such as converting Sass to CSS and compiling HTML templates (made using Nunjucks templating language). I also made use of isotope.js for image gallery filtering.',
+    blurb: 'This project was a complete redesign of the client\'s existing site. The site needed an updated look and to be made responsive. I used the Gulp task runner to automate parts of the development process such as converting Sass to CSS and compiling HTML templates (made using Nunjucks templating language). I also made use of isotope.js for image gallery filtering.',
     bgColor: '#9068be'
   }
 ]

@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     fontSize: '1.2em'
   },
   itemContainer: {
-    '@media (min-width: 992px)': {
+    '@media (min-width: 1100px)': {
       display: 'flex',
       flexFlow: 'row nowrap',
       justifyContent: 'center',
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     borderTop: '3px solid #2c3f52',
    'borderRadius': '3px',
     boxShadow: '0 2px 2px rgba(0,0,0,0.1)',
-    '@media (min-width: 992px)': {
+    '@media (min-width: 1100px)': {
       margin: '4em 1.5em'
     }
   },
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     'textAlign': 'left',
     'margin': '2em auto',
     'maxWidth': '500px',
-    '@media (min-width: 992px)': {
+    '@media (min-width: 1100px)': {
       margin: '0 1.5em'
     }
   },

@@ -10,19 +10,25 @@ const styles = StyleSheet.create({
     maxWidth: 1100,
     margin: 'auto',
     color: '#fffbfe',
-    padding: '0.5em 1em',
+    padding: '1em',
     position: 'relative',
     display: 'flex',
     flexFlow: 'row nowrap',
     alignItems: 'center',
     fontWeight: '300',
-    fontFamily: '"Patua One", sans-serif'
+    fontFamily: '"Patua One", sans-serif',
+    '@media (min-width: 991px)': {
+      padding: '0.5em 1em'
+    }
   },
   brand: {
     fontSize: '0.9em'
   },
   brandTitle: {
-    margin: 0
+    margin: 0,
+    '@media (max-width: 991px)': {
+      display: 'none'
+    }
   },
   nav: {
     display: 'flex',
