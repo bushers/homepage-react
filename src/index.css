@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Patua+One|Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Patua+One|Lato:300');
 
 html {
  box-sizing: border-box;
@@ -10,10 +10,16 @@ html {
 
 body {
   margin: 0;
+  font-family: 'Lato', sans-serif;
   padding: 0;
   background-color: #f1f2f3;
-  font-family: Roboto, sans-serif;
-  line-height: 1.4;
+  line-height: 1.7;
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 18px;
+  }
 }
 
 img {
@@ -24,6 +30,7 @@ img {
 
 p {
   margin: 0.5em;
+  font-size: 1.1em;
 }
 
 a {
@@ -54,51 +61,38 @@ ul {
 .title-appear {
   opacity: 0.01;
   visibility: hidden;
-  transform: translateX(-100%);
+  transform: translateX(-50%);
 }
 
 .title-appear.title-appear-active {
   opacity: 1;
   visibility: visible;
   transform: translateX(0%);
-  transition: all 1s ease-out;
+  transition: all 1.5s ease;
 }
 
 .intro-appear {
   opacity: 0.01;
   visibility: hidden;
-  transform: translateX(100%);
+  transform: translateX(50%);
 }
 
 .intro-appear.intro-appear-active {
   opacity: 1;
   visibility: visible;
   transform: translateX(0%);
-  transition: all 1s ease-out;
+  transition: all 1.5s ease;
 }
 
-.profile-pic-appear {
+.fade-in-appear {
   opacity: 0.01;
   visibility: hidden;
 }
 
-.profile-pic-appear.profile-pic-appear-active {
+.fade-in-appear.fade-in-appear-active {
   opacity: 1;
   visibility: visible;
-  transition: all 0.8s ease-in;
-}
-
-.work-blurb-appear {
-  opacity: 0.01;
-  visibility: hidden;
-  transform: translateY(100%);
-}
-
-.work-blurb-appear.work-blurb-appear-active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0%);
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease-in;
 }
 
 /***************************************
@@ -115,15 +109,19 @@ ul {
 }
 
 .work-item-img {
-  max-width: 140px;
+  max-width: 170px;
   transition: transform 0.4s;
 }
 
-.work-item-tile:hover .work-item-img {
+.work-item-tile:hover .work-item-img,
+.work-item-tile:focus .work-item-img,
+.work-item-tile:active .work-item-img {
   transform: translateY(-50px);
 }
 
-.work-item-tile:hover .work-item-overlay {
+.work-item-tile:hover .work-item-overlay,
+.work-item-tile:focus .work-item-overlay,
+.work-item-tile:active .work-item-overlay {
   opacity: 1;
   transform: translateY(0px);
   transition: transform 0.4s, opacity 0.1s;
@@ -136,6 +134,7 @@ ul {
   position: absolute;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100px;
   width: 100%;
   top: auto;

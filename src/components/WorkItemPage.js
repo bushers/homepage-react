@@ -17,11 +17,29 @@ const styles = StyleSheet.create({
   },
   title: {
     'margin': '0.5em auto 0 auto',
-    'fontSize': '1.4em'
+    'fontSize': '1.6em'
   },
   link: {
     'color': '#2c3f52',
     'fontWeight': 'bold',
+    fontSize: '1.2em'
+  },
+  itemContainer: {
+    '@media (min-width: 1100px)': {
+      display: 'flex',
+      flexFlow: 'row nowrap',
+      justifyContent: 'center',
+      alignItems: 'center'
+    }
+  },
+  screen: {
+    margin: '4em auto',
+    borderTop: '3px solid #2c3f52',
+   'borderRadius': '3px',
+    boxShadow: '0 2px 2px rgba(0,0,0,0.1)',
+    '@media (min-width: 1100px)': {
+      margin: '4em 1.5em'
+    }
   },
   blurb: {
     'backgroundColor': '#fff',
@@ -31,7 +49,10 @@ const styles = StyleSheet.create({
     'padding': '5px',
     'textAlign': 'left',
     'margin': '2em auto',
-    'maxWidth': '500px'
+    'maxWidth': '500px',
+    '@media (min-width: 1100px)': {
+      margin: '0 1.5em'
+    }
   },
   backLink: {
     display: 'inline-block'
@@ -43,21 +64,23 @@ const styles = StyleSheet.create({
 
 const WorkItemPage = props => (
   <div className={css(styles.wrapper)}>
-    <img className={css(styles.logo)}
-         src={props.data.imgSrc}
-         alt={props.data.title} />
     <h3 className={css(styles.title)}>{props.data.title}</h3>
     <a className={css(styles.link)}
        href={`http://${props.data.siteUrl}`}>Visit site</a>
-       <CSSTransitionGroup
-         transitionName='work-blurb'
-         transitionAppear={true}
-         transitionAppearTimeout={500}
-         transitionEnterTimeout={600}
-         transitionLeaveTimeout={200}>
-    <div className={css(styles.blurb)}>
-      <p>{props.data.blurb}</p>
-    </div>
+    <CSSTransitionGroup
+     transitionName='fade-in'
+     transitionAppear={true}
+     transitionAppearTimeout={500}
+     transitionEnterTimeout={600}
+     transitionLeaveTimeout={200}>
+      <div className={css(styles.itemContainer)}>
+        <img className={css(styles.screen)}
+           src={props.data.siteScreen}
+           alt='site screen shot' />
+        <div className={css(styles.blurb)}>
+          <p>{props.data.blurb}</p>
+        </div>
+      </div>
     </CSSTransitionGroup>
     <NavLink className={css(styles.backLink)} to='/work'>
       <img className={css(styles.arrow)}
@@ -73,7 +96,7 @@ export default WorkItemPage
 WorkItemPage.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string,
-    imgSrc: PropTypes.string,
+    siteScreen: PropTypes.string,
     siteUrl: PropTypes.string,
     blurb: PropTypes.string
   })
