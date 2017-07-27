@@ -68,7 +68,7 @@ ul {
   opacity: 1;
   visibility: visible;
   transform: translateX(0%);
-  transition: all 0.8s ease-out;
+  transition: all 1.5s ease;
 }
 
 .intro-appear {
@@ -81,7 +81,7 @@ ul {
   opacity: 1;
   visibility: visible;
   transform: translateX(0%);
-  transition: all 0.8s ease-out;
+  transition: all 1.5s ease;
 }
 
 .fade-in-appear {

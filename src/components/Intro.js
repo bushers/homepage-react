@@ -22,9 +22,6 @@ const styles = StyleSheet.create({
       borderLeft: '1.25em solid transparent',
       borderRight: '1.25em solid transparent',
       zIndex: '2'
-    },
-    '@media (min-width: 992px)': {
-      padding: '2em'
     }
   },
   text: {
@@ -37,7 +34,7 @@ const Intro = props => (
     <CSSTransitionGroup
       transitionName='title'
       transitionAppear={true}
-      transitionAppearTimeout={800}
+      transitionAppearTimeout={1500}
       transitionEnterTimeout={600}
       transitionLeaveTimeout={200}>
       <div>

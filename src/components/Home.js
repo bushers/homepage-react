@@ -35,7 +35,7 @@ const Home = props => (
         <CSSTransitionGroup
           transitionName='intro'
           transitionAppear={true}
-          transitionAppearTimeout={800}
+          transitionAppearTimeout={1500}
           transitionEnterTimeout={600}
           transitionLeaveTimeout={200}>
           <div className={css(styles.list)}>
