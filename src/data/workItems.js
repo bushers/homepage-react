@@ -26,7 +26,7 @@ export default [
     imgSrc: require('../img/shade-luma-logo.png'),
     siteScreen: require('../img/shade-luma-screen.png'),
     description: 'Custom WordPress theme for London based video production company',
-    blurb: 'For this project I was tasked with creating a bespoke WordPress theme so that the client could update the site using the familiar WP admin area. I used HTML with PHP to create templates for the posts and pages, and to hook into the WP back-end. I used JavaScript and jQuery to create additional functionality, such as adding an overlaying embedded video player.',
+    blurb: 'For this project I was tasked with creating a bespoke WordPress theme so that the client could update the site using the familiar WP admin area. I used HTML with PHP to create templates for the posts and pages, and to hook into the WP back-end. I used JavaScript and jQuery to create additional functionality, such as adding an overlay with embedded video player.',
     bgColor: '#0d1014'
   },
   {
@@ -36,7 +36,7 @@ export default [
     imgSrc: require('../img/kt-dance-logo.png'),
     siteScreen: require('../img/kt-dance-screen.png'),
     description: 'Bespoke website design and development for Bexley based dance school',
-    blurb: 'This project was a complete redesign of the client\'s existing site. The site needed an updated look and to be made responsive. I used the Gulp task runner to automate parts of the development process such as converting Sass to CSS and compiling HTML templates (made using Nunjucks templating language). I also made use of isotope.js for image gallery filtering.',
+    blurb: 'This project was a complete redesign of the client\'s existing site. The site needed an updated look and to be made responsive. I used the Gulp task runner to automate parts of the development process such as converting Sass to CSS and compiling HTML templates (made using the Nunjucks templating language). I also made use of isotope.js for image gallery filtering.',
     bgColor: '#9068be'
   }
 ]
