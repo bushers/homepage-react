@@ -12,7 +12,7 @@ export default [
   {
     title: 'James Morgan Portfolio',
     path: 'jcm-portfolio',
-    siteUrl: 'jamescmorgan.com',
+    siteUrl: 'jamescmorgan.surge.sh',
     imgSrc: require('../img/jcm-logo.png'),
     siteScreen: require('../img/jcm-screen.png'),
     description: 'Portfolio site for London based videographer James C Morgan',

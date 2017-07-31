@@ -66,7 +66,11 @@ const WorkItemPage = props => (
   <div className={css(styles.wrapper)}>
     <h3 className={css(styles.title)}>{props.data.title}</h3>
     <a className={css(styles.link)}
-       href={`http://${props.data.siteUrl}`}>Visit site</a>
+       href={`http://${props.data.siteUrl}`}
+       target='_blank'
+       rel='noopener noreferrer'>
+       Visit site
+    </a>
     <CSSTransitionGroup
      transitionName='fade-in'
      transitionAppear={true}
