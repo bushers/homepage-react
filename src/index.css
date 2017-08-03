@@ -92,7 +92,21 @@ ul {
 .fade-in-appear.fade-in-appear-active {
   opacity: 1;
   visibility: visible;
-  transition: all 0.5s ease-in;
+  transition: all 1s ease-in;
+}
+
+.fade-up-appear {
+  opacity: 0.01;
+  visibility: hidden;
+  transform: translateY(50%);
+  transition: all 1.5s ease;
+}
+
+.fade-up-appear.fade-up-appear-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+  transition: all 1.5s ease;
 }
 
 /***************************************

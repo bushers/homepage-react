@@ -24,6 +24,10 @@ const styles = StyleSheet.create({
       zIndex: '2'
     }
   },
+  textContainer: {
+    maxWidth: 620,
+    margin: 'auto'
+  },
   text: {
     margin: 0
   }
@@ -37,7 +41,7 @@ const Intro = props => (
       transitionAppearTimeout={1500}
       transitionEnterTimeout={600}
       transitionLeaveTimeout={200}>
-      <div>
+      <div className={css(styles.textContainer)}>
         <p className={css(styles.text)}>Hi there, I'm</p>
         <h1>Nick Bushby</h1>
         <p className={css(styles.text)}>Front-end Developer</p>
