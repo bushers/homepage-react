@@ -48,7 +48,7 @@ const Contact = props => (
     <CSSTransitionGroup
      transitionName='fade-in'
      transitionAppear={true}
-     transitionAppearTimeout={500}
+     transitionAppearTimeout={1000}
      transitionEnterTimeout={600}
      transitionLeaveTimeout={200}>
       <ul className={css(styles.list)}>

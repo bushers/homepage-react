@@ -24,7 +24,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0, 0, 0, 0.6)'
   },
   list: {
-    fontSize: '1.2em'
+    fontSize: '1.2em',
+    maxWidth: 620,
+    margin: 'auto'
   }
 })
 
