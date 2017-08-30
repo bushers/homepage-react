@@ -20,6 +20,9 @@ const styles = StyleSheet.create({
   overlay: {
     width: '100%',
     padding: '4em 1em',
+    '@media (min-width: 1400px)': {
+      padding: '7em 1em'
+    },
     fontSize: '1.15em',
     backgroundColor: 'rgba(0, 0, 0, 0.6)'
   },
