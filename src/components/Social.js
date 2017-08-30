@@ -23,7 +23,7 @@ const Social = props => (
     <li className={css(styles.item)}><a href='mailto:nickbushby1@gmail.com'><img src={email} alt='email icon' /></a></li>
     <li className={css(styles.item)}><a href='https://github.com/bushers'><img src={github} alt='github icon' /></a></li>
     <li className={css(styles.item)}><a href='https://twitter.com/nickbushby1'><img src={twitter} alt='twitter icon' /></a></li>
-    <li className={css(styles.item)}><a href='https://linkedin.com/nick.bushby'><img src={linkedin} alt='linkedin icon' /></a></li>
+    <li className={css(styles.item)}><a href='https://www.linkedin.com/in/nick-bushby-8a3683104/'><img src={linkedin} alt='linkedin icon' /></a></li>
   </ul>
 )
 

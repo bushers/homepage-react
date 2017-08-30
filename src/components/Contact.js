@@ -9,6 +9,9 @@ import linkedin from '../img/linkedin.png'
 const styles = StyleSheet.create({
   wrapper: {
     padding: '3em 1em',
+    '@media (min-width: 1400px)': {
+      padding: '4em 1em'
+    },
     textAlign: 'center',
     fontSize: '1.2em'
   },

@@ -7,6 +7,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#e1e8f0',
     position: 'relative',
     padding: '1em',
+    '@media (min-width: 1400px)': {
+      padding: '2em 1em'
+    },
     textAlign: 'center',
     fontFamily: '"Patua One", sans-serif',
     fontSize: '1.2em',

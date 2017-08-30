@@ -9,6 +9,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#2c3f52',
     color: '#fffbfe',
     padding: '1em',
+    '@media (min-width: 1400px)': {
+      padding: '2em 1em'
+    },
     position: 'relative',
     display: 'flex',
     flexFlow: 'column nowrap',
